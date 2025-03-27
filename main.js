@@ -2,11 +2,19 @@
 Skript für Neuseelandreise
 */
 
-//Karte initialisieren
 let lat = -44.616667;
 let lng = 167.866667;
 let zoom = 12;
 
+let stop = {
+    nr: "18",
+    title: "Milford Sound",
+    user: "Pruje839",
+    lat: "-44.616667",
+    lng: "167.866667",
+    zoom: "12",
+};
+// Karte initalisieren 
 let map = L.map('map').setView([lat, lng], zoom);
 
 //Hintergrundkarte definieren
@@ -20,9 +28,10 @@ let marker = L.marker([lat, lng]).addTo(map);
 
 //Popup definieren und öffnen
 marker.bindPopup(`
-    <h2>Milford Sound</h2></b>
+    <h2>Milford Sound</h2>
     <ul>
         <li> Geogr. Breite: ${lat.toFixed(3)}° </li>
         <li> Geogr. Länge: ${lng.toFixed(3)}° </li>
     </ul>
 `).openPopup();
+
