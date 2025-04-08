@@ -252,7 +252,7 @@ L.control.layers({
     "ESRIWorldImagery": L.tileLayer.provider('Esri.WorldImagery'),
 
 },{
-    "Lieblingsorte": markerGroup,
+    "Neuseelandreiseziele": markerGroup,
 }).addTo(map);
 
 
